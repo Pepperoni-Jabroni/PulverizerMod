@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:gravel_sand",
+  "ingredient": "minecraft:gravel",
+  "result": {
+    "id": "minecraft:sand",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

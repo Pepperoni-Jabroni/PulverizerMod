@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:golden_shovel_gold_ingot",
+  "ingredient": "minecraft:golden_shovel",
+  "result": {
+    "id": "minecraft:gold_ingot",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

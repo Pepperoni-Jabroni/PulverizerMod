@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:green_concrete_green_dye",
+  "ingredient": "minecraft:green_concrete",
+  "result": {
+    "id": "minecraft:green_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:blue_glazed_terracotta_blue_dye",
+  "ingredient": "minecraft:blue_glazed_terracotta",
+  "result": {
+    "id": "minecraft:blue_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

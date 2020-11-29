@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:cobblestone_gravel",
+  "ingredient": "minecraft:cobblestone",
+  "result": {
+    "id": "minecraft:gravel",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

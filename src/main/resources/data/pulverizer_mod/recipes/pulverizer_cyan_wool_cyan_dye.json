@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:cyan_wool_cyan_dye",
+  "ingredient": "minecraft:cyan_wool",
+  "result": {
+    "id": "minecraft:cyan_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

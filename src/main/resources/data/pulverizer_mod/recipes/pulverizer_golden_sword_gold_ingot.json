@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:golden_sword_gold_ingot",
+  "ingredient": "minecraft:golden_sword",
+  "result": {
+    "id": "minecraft:gold_ingot",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

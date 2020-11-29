@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:cyan_stained_glass_cyan_dye",
+  "ingredient": "minecraft:cyan_stained_glass",
+  "result": {
+    "id": "minecraft:cyan_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

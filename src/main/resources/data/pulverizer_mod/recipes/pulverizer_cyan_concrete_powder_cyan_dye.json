@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:cyan_concrete_powder_cyan_dye",
+  "ingredient": "minecraft:cyan_concrete_powder",
+  "result": {
+    "id": "minecraft:cyan_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:gray_concrete_gray_dye",
+  "ingredient": "minecraft:gray_concrete",
+  "result": {
+    "id": "minecraft:gray_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

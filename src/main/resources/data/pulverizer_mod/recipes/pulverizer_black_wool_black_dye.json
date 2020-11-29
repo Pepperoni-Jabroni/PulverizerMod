@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:black_wool_black_dye",
+  "ingredient": "minecraft:black_wool",
+  "result": {
+    "id": "minecraft:black_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

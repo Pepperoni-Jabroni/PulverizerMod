@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:blue_wool_blue_dye",
+  "ingredient": "minecraft:blue_wool",
+  "result": {
+    "id": "minecraft:blue_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

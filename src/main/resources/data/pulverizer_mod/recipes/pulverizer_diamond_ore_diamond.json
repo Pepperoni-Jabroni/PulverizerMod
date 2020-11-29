@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:diamond_ore_diamond",
+  "ingredient": "minecraft:diamond_ore",
+  "result": {
+    "id": "minecraft:diamond",
+    "Count": 4
+  },
+  "pulverizetime": 200
+}

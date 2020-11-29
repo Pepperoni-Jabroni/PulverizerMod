@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:green_wool_green_dye",
+  "ingredient": "minecraft:green_wool",
+  "result": {
+    "id": "minecraft:green_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

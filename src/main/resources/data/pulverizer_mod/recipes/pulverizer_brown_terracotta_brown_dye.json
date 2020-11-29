@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:brown_terracotta_brown_dye",
+  "ingredient": "minecraft:brown_terracotta",
+  "result": {
+    "id": "minecraft:brown_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}
