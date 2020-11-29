@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:yellow_concrete_powder_yellow_dye",
+  "ingredient": "minecraft:yellow_concrete_powder",
+  "result": {
+    "id": "minecraft:yellow_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

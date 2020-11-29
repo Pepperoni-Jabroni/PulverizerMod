@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:orange_stained_glass_orange_dye",
+  "ingredient": "minecraft:orange_stained_glass",
+  "result": {
+    "id": "minecraft:orange_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

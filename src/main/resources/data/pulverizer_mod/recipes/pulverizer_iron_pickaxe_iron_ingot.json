@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:iron_pickaxe_iron_ingot",
+  "ingredient": "minecraft:iron_pickaxe",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

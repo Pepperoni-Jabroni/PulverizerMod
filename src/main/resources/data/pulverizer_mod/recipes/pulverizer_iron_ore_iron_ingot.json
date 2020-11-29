@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:iron_ore_iron_ingot",
+  "ingredient": "minecraft:iron_ore",
+  "result": {
+    "id": "minecraft:iron_ingot",
+    "Count": 4
+  },
+  "pulverizetime": 200
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:white_concrete_white_dye",
+  "ingredient": "minecraft:white_concrete",
+  "result": {
+    "id": "minecraft:white_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:orange_concrete_powder_orange_dye",
+  "ingredient": "minecraft:orange_concrete_powder",
+  "result": {
+    "id": "minecraft:orange_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

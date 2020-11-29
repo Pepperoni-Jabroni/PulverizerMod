@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:light_gray_wool_light_gray_dye",
+  "ingredient": "minecraft:light_gray_wool",
+  "result": {
+    "id": "minecraft:light_gray_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

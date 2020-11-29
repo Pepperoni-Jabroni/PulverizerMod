@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:sand_clay",
+  "ingredient": "minecraft:sand",
+  "result": {
+    "id": "minecraft:clay",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

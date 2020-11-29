@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:lapis_ore_lapis_lazuli",
+  "ingredient": "minecraft:lapis_ore",
+  "result": {
+    "id": "minecraft:lapis_lazuli",
+    "Count": 16
+  },
+  "pulverizetime": 200
+}

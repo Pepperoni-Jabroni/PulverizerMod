@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:white_wool_white_dye",
+  "ingredient": "minecraft:white_wool",
+  "result": {
+    "id": "minecraft:white_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

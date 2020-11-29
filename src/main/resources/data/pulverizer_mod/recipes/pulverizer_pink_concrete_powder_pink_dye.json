@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:pink_concrete_powder_pink_dye",
+  "ingredient": "minecraft:pink_concrete_powder",
+  "result": {
+    "id": "minecraft:pink_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

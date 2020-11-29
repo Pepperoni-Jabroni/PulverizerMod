@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:redstone_ore_redstone",
+  "ingredient": "minecraft:redstone_ore",
+  "result": {
+    "id": "minecraft:redstone",
+    "Count": 8
+  },
+  "pulverizetime": 200
+}

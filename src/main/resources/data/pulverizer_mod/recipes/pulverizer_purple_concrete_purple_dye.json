@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:purple_concrete_purple_dye",
+  "ingredient": "minecraft:purple_concrete",
+  "result": {
+    "id": "minecraft:purple_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

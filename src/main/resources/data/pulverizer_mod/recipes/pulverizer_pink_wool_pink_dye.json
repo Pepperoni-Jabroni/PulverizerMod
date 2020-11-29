@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:pink_wool_pink_dye",
+  "ingredient": "minecraft:pink_wool",
+  "result": {
+    "id": "minecraft:pink_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}

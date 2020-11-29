@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:lime_wool_lime_dye",
+  "ingredient": "minecraft:lime_wool",
+  "result": {
+    "id": "minecraft:lime_dye",
+    "Count": 1
+  },
+  "pulverizetime": 200
+}
