@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "pulverizer_mod:block/pulverizer_top",
+    "front": "pulverizer_mod:block/pulverizer_front_on",
+    "side": "pulverizer_mod:block/pulverizer_side"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "pulverizer_mod",
+  "version": "1.0",
+
+  "name": "Pulverizer Mod",
+  "description": "You need to pulverize it!",
+  "authors": [
+    "pepperoni_jabroni_"
+  ],
+  "contact": {
+    "homepage": "https://facebook.com/",
+    "sources": "https://facebook.com/"
+  },
+
+  "license": "GPL-3.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "pepjebs.pulverizermod.PulverizerMod"
+    ],
+    "client": [
+      "pepjebs.pulverizermod.client.PulverizerClient"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
