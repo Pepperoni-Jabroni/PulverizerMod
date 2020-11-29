@@ -15,6 +15,7 @@ The Pulverizer is a fully-featured new block. This includes:
    - Bottom side: Extract Output
    - Left side: Insert Diamond
    - Back/Right side: Insert Fuel
+- Full Datapack support for new Recipes (see Example)
 
 ## Purpose
 
