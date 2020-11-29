@@ -1,0 +1,11 @@
+
+{
+  "type": "pulverizer_mod:pulverizer",
+  "id": "pulverizer_mod:pulverizer_cactus_green_dye",
+  "ingredient": "minecraft:cactus",
+  "result": {
+    "id": "minecraft:green_dye",
+    "Count": 4
+  },
+  "pulverizetime": 200
+}
