@@ -1,4 +1,10 @@
 # Pulverizer Mod
+
+<p align="center">
+  <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
+</p>
+
+
 Yet another pulverizer mod for Minecraft. This mod adds a single new, Vanilla-friendly, block to the game: the "Pulverizer".
 
 The Pulverizer is a multipurpose block which is powered by both conventional methods (coal, etc) *and diamonds*!
