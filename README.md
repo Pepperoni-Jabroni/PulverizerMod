@@ -1,9 +1,8 @@
 # Pulverizer Mod
 
-<p align="center">
   <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
-</p>
 
+[![](http://cf.way2muchnoise.eu/versions/jei_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/pulverizer-mod)
 
 Yet another pulverizer mod for Minecraft. This mod adds a single new, Vanilla-friendly, block to the game: the "Pulverizer".
 
