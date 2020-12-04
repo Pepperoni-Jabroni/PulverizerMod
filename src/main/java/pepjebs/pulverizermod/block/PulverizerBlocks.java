@@ -3,6 +3,7 @@ package pepjebs.pulverizermod.block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Level;
@@ -17,7 +18,7 @@ public class PulverizerBlocks {
     }
 
     static{
-        PULVERIZER = registerBlock("pulverizer", new PulverizerBlock(FabricBlockSettings.of(Material.STONE).strength(2.5f)));
+        PULVERIZER = registerBlock("pulverizer", new PulverizerBlock(FabricBlockSettings.of(Material.STONE).strength(2.5f).luminance(l -> l.get(Properties.LIT) ? 13 : 0)));
 
     }
 
