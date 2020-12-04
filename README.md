@@ -10,7 +10,7 @@ The Pulverizer is a multipurpose block which is powered by both conventional met
 
 ## Features
 The Pulverizer is a fully-featured new block. This includes:
-- Sounds
+- Sounds (w/ Subtitles)
 - Smoke & Fire Particles
 - An animated texture when lit
 - Shift+Click support for all inventory slots
@@ -21,6 +21,7 @@ The Pulverizer is a fully-featured new block. This includes:
    - Left side: Insert Diamond
    - Back/Right side: Insert Fuel
 - Full Datapack support for new Recipes (see Example)
+- A dynamic light source when pulverizing
 
 ## Purpose
 
