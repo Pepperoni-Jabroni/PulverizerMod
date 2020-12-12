@@ -5,7 +5,7 @@
   "ingredient": "minecraft:lapis_ore",
   "result": {
     "id": "minecraft:lapis_lazuli",
-    "Count": 16
+    "Count": 36
   },
   "pulverizetime": 200
 }
