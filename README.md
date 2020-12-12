@@ -39,7 +39,7 @@ The Pulverizer has a number of uses, which are:
    - Each output is modelled off a maximum-luck Fortune III roll.
    - You can now get 4 ingots from respective Iron & Gold Ores!
    - Coal, Diamond, & Emerald Ores will yield 4 respective items!
-   - Redstone Ore will yield 8 Redstone & Lapis Ore will yield 16 Lapis Lazuli!
+   - Redstone Ore will yield 8 Redstone & Lapis Ore will yield 36 Lapis Lazuli (use a Hopper!)
 
 | Input                                                      | Output           | Count |
 |------------------------------------------------------------|------------------|-------|
