@@ -51,7 +51,7 @@ The Pulverizer has a number of uses, which are:
 | Any Dyed Block (Wool, Terracotta, Concrete, Stained Glass) | Respective Dye   | 1     |
 | Any Gold/Iron Tool/Armor                                   | Respective Ingot | 1     |
 | Coal/Iron/Gold/Emerald/Diamond Ore                         | Respective Item  | 4     |
-| Lapis Ore                                                  | Lapis Lazuli     | 16    |
+| Lapis Ore                                                  | Lapis Lazuli     | 36    |
 | Redstone Ore                                               | Redstone         | 8     |
 
 ## Cost
