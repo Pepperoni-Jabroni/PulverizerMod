@@ -22,6 +22,7 @@ The Pulverizer is a fully-featured new block. This includes:
    - Back/Right side: Insert Fuel
 - Full Datapack support for new Recipes (see Example)
 - A dynamic light source when pulverizing
+- Config to enable/disable recipe categories, adjust diamond durability
 
 ## Purpose
 
