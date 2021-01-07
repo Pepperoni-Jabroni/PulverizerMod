@@ -2,7 +2,7 @@
 
   <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api"><img src="https://i.imgur.com/Ol1Tcf8.png" width="149" height="50" title="Fabric API" alt="Fabric API"></a>
 
-[![](http://cf.way2muchnoise.eu/versions/jei_latest.svg)](https://www.curseforge.com/minecraft/mc-mods/the-pulverizer-mod)
+[![](http://cf.way2muchnoise.eu/425631.svg)](https://www.curseforge.com/minecraft/mc-mods/the-pulverizer-mod)
 
 Yet another pulverizer mod for Minecraft. This mod adds a single new, Vanilla-friendly, block to the game: the "Pulverizer".
 
@@ -39,7 +39,7 @@ The Pulverizer has a number of uses, which are:
    - Each output is modelled off a maximum-luck Fortune III roll.
    - You can now get 4 ingots from respective Iron & Gold Ores!
    - Coal, Diamond, & Emerald Ores will yield 4 respective items!
-   - Redstone Ore will yield 8 Redstone & Lapis Ore will yield 16 Lapis Lazuli!
+   - Redstone Ore will yield 8 Redstone & Lapis Ore will yield 36 Lapis Lazuli (use a Hopper!)
 
 | Input                                                      | Output           | Count |
 |------------------------------------------------------------|------------------|-------|
@@ -51,7 +51,7 @@ The Pulverizer has a number of uses, which are:
 | Any Dyed Block (Wool, Terracotta, Concrete, Stained Glass) | Respective Dye   | 1     |
 | Any Gold/Iron Tool/Armor                                   | Respective Ingot | 1     |
 | Coal/Iron/Gold/Emerald/Diamond Ore                         | Respective Item  | 4     |
-| Lapis Ore                                                  | Lapis Lazuli     | 16    |
+| Lapis Ore                                                  | Lapis Lazuli     | 36    |
 | Redstone Ore                                               | Redstone         | 8     |
 
 ## Cost
