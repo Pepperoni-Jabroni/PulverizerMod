@@ -7,5 +7,6 @@
     "id": "minecraft:gravel",
     "Count": 1
   },
-  "pulverizetime": 200
+  "pulverizetime": 200,
+  "category": "erosion"
 }

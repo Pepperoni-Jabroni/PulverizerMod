@@ -12,7 +12,8 @@ BASIC_RECIPE_TEMPL = """
     \"id\": \"minecraft:{recipe_result}\",
     \"Count\": {recipe_count}
   }},
-  \"pulverizetime\": 200
+  \"pulverizetime\": 200,
+  \"category\": \"{category}\"
 }}
 """
 
@@ -24,20 +25,22 @@ if __name__ == '__main__':
          output_dir = sys.argv[2]
          # Handle basic recipes
          for recipe_arr in processing_info['basic_recipes']:
-            recipe_ingredient, recipe_result, recipe_count = recipe_arr
+            recipe_ingredient, recipe_result, recipe_count, category = recipe_arr
             recipe_name = BASIC_RECIPE_NAME_TEMPL.format(recipe_ingredient=recipe_ingredient, recipe_result=recipe_result)
             with open(output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name), 'w') as f:
                print('Generated '+output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name))
-               f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=recipe_ingredient, recipe_result=recipe_result, recipe_count=recipe_count))
+               f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=recipe_ingredient, recipe_result=recipe_result, recipe_count=recipe_count, category=category))
          # Handle dye recipes
+         category="dye"
          for dye in processing_info['dyes']:
             dye_item = dye+'_dye'
             for dye_block in processing_info['dye_blocks']:
                recipe_name = BASIC_RECIPE_NAME_TEMPL.format(recipe_ingredient=dye+'_'+dye_block,recipe_result=dye_item)
                with open(output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name), 'w') as f:
                   print('Generated '+output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name))
-                  f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=dye+'_'+dye_block, recipe_result=dye_item, recipe_count=1))
+                  f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=dye+'_'+dye_block, recipe_result=dye_item, recipe_count=1, category=category))
          # Handle ingot recipes
+         category="recycle"
          for ingot in processing_info['ingot_types']:
             ingot_item = ingot+'_ingot'
             for source in processing_info['ingot_sources']:
@@ -47,8 +50,9 @@ if __name__ == '__main__':
                recipe_name = BASIC_RECIPE_NAME_TEMPL.format(recipe_ingredient=source_item,recipe_result=ingot_item)
                with open(output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name), 'w') as f:
                   print('Generated '+output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name))
-                  f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=source_item, recipe_result=ingot_item, recipe_count=1))
+                  f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=source_item, recipe_result=ingot_item, recipe_count=1, category=category))
          # Handle ore recipes
+         category="ore"
          for ore_arr in processing_info['ores']:
             item, count = ore_arr
             ore = item + '_ore'
@@ -59,4 +63,4 @@ if __name__ == '__main__':
             recipe_name = BASIC_RECIPE_NAME_TEMPL.format(recipe_ingredient=ore, recipe_result=item)
             with open(output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name), 'w') as f:
                print('Generated '+output_dir+BASIC_RECIPE_FLNAME_TEMPL.format(recipe_name=recipe_name))
-               f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=ore, recipe_result=item, recipe_count=count))
+               f.write(BASIC_RECIPE_TEMPL.format(recipe_name=recipe_name, recipe_ingredient=ore, recipe_result=item, recipe_count=count, category=category))

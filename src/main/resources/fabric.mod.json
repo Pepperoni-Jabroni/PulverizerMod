@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "pulverizer_mod",
-  "version": "1.0",
+  "version": "1.1.0",
 
   "name": "Pulverizer Mod",
   "description": "You need to pulverize it!",
@@ -9,8 +9,8 @@
     "pepperoni_jabroni_"
   ],
   "contact": {
-    "homepage": "https://facebook.com/",
-    "sources": "https://facebook.com/"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/the-pulverizer-mod",
+    "sources": "https://github.com/Pepperoni-Jabroni/PulverizerMod"
   },
 
   "license": "GPL-3.0",

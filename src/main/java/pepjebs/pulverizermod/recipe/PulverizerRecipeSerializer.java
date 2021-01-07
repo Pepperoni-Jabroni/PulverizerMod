@@ -20,7 +20,8 @@ public class PulverizerRecipeSerializer implements RecipeSerializer<PulverizerRe
         Item ingredient = Registry.ITEM.get(buf.readIdentifier());
         ItemStack itemStack = buf.readItemStack();
         int pulverizeTime = buf.readInt();
-        return new PulverizerRecipe(id, ingredient, itemStack, pulverizeTime);
+        String category = buf.readString();
+        return new PulverizerRecipe(id, ingredient, itemStack, pulverizeTime, category);
     }
 
     @Override
@@ -28,5 +29,6 @@ public class PulverizerRecipeSerializer implements RecipeSerializer<PulverizerRe
         buf.writeIdentifier(Registry.ITEM.getId(recipe.ingredient));
         buf.writeItemStack(recipe.result);
         buf.writeInt(recipe.pulverizeTime);
+        buf.writeString(recipe.category);
     }
 }

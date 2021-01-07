@@ -25,6 +25,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 import org.jetbrains.annotations.Nullable;
+import pepjebs.pulverizermod.PulverizerMod;
 import pepjebs.pulverizermod.block.screen.PulverizerScreenHandler;
 import pepjebs.pulverizermod.recipe.PulverizerRecipe;
 import pepjebs.pulverizermod.recipe.PulverizerRecipes;
@@ -39,7 +40,6 @@ public class PulverizerBlockEntity extends LockableContainerBlockEntity implemen
     private static final int[] BOTTOM_SLOTS = new int[]{3};
     private static final int[] SIDE_SLOTS = new int[]{2};
     private static final int[] LEFT_SLOTS = new int[]{1};
-    public static final int GRIND_LIFETIME = 1561; // Diamond's durability
 
     private int burnTime; // Fuel source burn time, goes down
     private int fuelTime; // Amount of time the given fuel will burn, const
@@ -140,7 +140,7 @@ public class PulverizerBlockEntity extends LockableContainerBlockEntity implemen
                 ItemStack grindStack = this.inventory.get(1);
                 if (!grindStack.isEmpty() && this.grindTime == 0) {
                     Item item2 = grindStack.getItem();
-                    this.grindTime = GRIND_LIFETIME;
+                    this.grindTime = PulverizerBlockEntity.loadPulverizeMaximumFromConfig();
                     grindStack.decrement(1);
                     if (grindStack.isEmpty()) {
                         Item item3 = item2.getRecipeRemainder();
@@ -386,5 +386,10 @@ public class PulverizerBlockEntity extends LockableContainerBlockEntity implemen
         packetByteBuf.writeItemStack(this.inventory.get(1));
         packetByteBuf.writeItemStack(this.inventory.get(2));
         packetByteBuf.writeItemStack(this.inventory.get(3));
+    }
+
+    public static int loadPulverizeMaximumFromConfig() {
+        if (PulverizerMod.CONFIG != null) return PulverizerMod.CONFIG.pulverizerDiamondDurability;
+        return 1561;
     }
 }

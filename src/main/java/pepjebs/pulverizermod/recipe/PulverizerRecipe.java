@@ -12,7 +12,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
+import pepjebs.pulverizermod.PulverizerMod;
 import pepjebs.pulverizermod.block.entity.PulverizerBlockEntity;
+import pepjebs.pulverizermod.config.PulverizerModConfig;
+
+import java.util.Map;
 
 public class PulverizerRecipe implements Recipe<PulverizerBlockEntity> {
 
@@ -20,24 +24,28 @@ public class PulverizerRecipe implements Recipe<PulverizerBlockEntity> {
     public final Item ingredient;
     public final ItemStack result;
     public final int pulverizeTime;
+    public final String category;
 
     public static final RecipeSerializer<PulverizerRecipe> SERIALIZER = new PulverizerRecipeSerializer();
     public static final Codec<PulverizerRecipe> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Identifier.CODEC.fieldOf("id").forGetter(PulverizerRecipe::getId),
             Registry.ITEM.fieldOf("ingredient").forGetter(PulverizerRecipe::getIngredient),
             ItemStack.CODEC.fieldOf("result").forGetter(PulverizerRecipe::getOutput),
-            Codec.INT.fieldOf("pulverizetime").forGetter(PulverizerRecipe::getPulverizeTime)
+            Codec.INT.fieldOf("pulverizetime").forGetter(PulverizerRecipe::getPulverizeTime),
+            Codec.STRING.fieldOf("category").forGetter(PulverizerRecipe::getCategory)
     ).apply(instance, PulverizerRecipe::new));
 
-    public PulverizerRecipe(Identifier id, Item ingredient, ItemStack result, int pulverizeTime) {
+    public PulverizerRecipe(Identifier id, Item ingredient, ItemStack result, int pulverizeTime, String category) {
         this.id = id;
         this.ingredient = ingredient;
         this.result = result;
         this.pulverizeTime = pulverizeTime;
+        this.category = category;
     }
 
     @Override
     public boolean matches(PulverizerBlockEntity inv, World world) {
+        if (!getConfigEntryValueForCategory(this.category)) return false;
         return this.ingredient.equals(inv.getStack(0).getItem()) && !inv.getStack(0).isDamaged();
     }
 
@@ -60,6 +68,8 @@ public class PulverizerRecipe implements Recipe<PulverizerBlockEntity> {
     public int getPulverizeTime() {
         return this.pulverizeTime;
     }
+
+    public String getCategory() {return this.getCategory();}
 
     // ...Return the output
     @Override
@@ -108,5 +118,23 @@ public class PulverizerRecipe implements Recipe<PulverizerBlockEntity> {
     @Override
     public RecipeType<?> getType() {
         return PulverizerRecipes.PULVERIZER_RECIPE_TYPE;
+    }
+
+    private boolean getConfigEntryValueForCategory(String category) {
+        // Only return "false" if the feature is truly, explicitly disabled
+        if (PulverizerMod.CONFIG == null) return true;
+        switch (category) {
+            case "bonus":
+                return PulverizerMod.CONFIG.enableBonusRecipes;
+            case "erosion":
+                return PulverizerMod.CONFIG.enableErosionRecipes;
+            case "dye":
+                return PulverizerMod.CONFIG.enableDyeRecipes;
+            case "recycle":
+                return PulverizerMod.CONFIG.enableRecycleRecipes;
+            case "ore":
+                return PulverizerMod.CONFIG.enableOreRecipes;
+        }
+        return true;
     }
 }

@@ -61,7 +61,7 @@ public class PulverizerScreen extends HandledScreen<ScreenHandler> {
     private void drawDiamondGear(MatrixStack matrices) {
         int grindTime = getThisHandler().getGrindTime();
         if (grindTime != 0) {
-            int width = (int)(((float) grindTime / (float) PulverizerBlockEntity.GRIND_LIFETIME) * 14);
+            int width = (int)(((float) grindTime / PulverizerBlockEntity.loadPulverizeMaximumFromConfig()) * 14);
             this.drawTexture(matrices, x + 34, y + 36, 176, 30, width, 14);
         }
     }
