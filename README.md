@@ -57,7 +57,7 @@ The Pulverizer has a number of uses, which are:
 
 ## Cost
 
-The obvious cost to using the Pulverizer is that it's powered by diamonds in addition to traditional fuels, like a Furnace. Each diamond powers the Pulverizer for 1561 uses (the same amount as a Diamond Pickaxe has durability).
+The obvious cost to using the Pulverizer is that it's powered by diamonds in addition to traditional fuels, like a Furnace. Each diamond powers the Pulverizer for 512 uses (the same amount as a Diamond Pickaxe has durability).
 
 One additional cost is that no Experience is generated with usage, a small cost to pay for increased Iron/Gold Ingot production.
 
