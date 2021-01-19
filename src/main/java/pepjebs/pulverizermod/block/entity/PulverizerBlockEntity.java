@@ -197,7 +197,13 @@ public class PulverizerBlockEntity extends LockableContainerBlockEntity implemen
     }
 
     private int getFuelTime(ItemStack stack) {
-        return stack == null ? 0 : FuelRegistry.INSTANCE.get(stack.getItem());
+        if (FuelRegistry.INSTANCE == null) return 0;
+        if (stack == null || stack.isEmpty()) return 0;
+        try {
+            return FuelRegistry.INSTANCE.get(stack.getItem());
+        } catch (NullPointerException e) {
+            return 0;
+        }
     }
 
     private boolean canAcceptRecipeOutput(@Nullable PulverizerRecipe recipe) {
